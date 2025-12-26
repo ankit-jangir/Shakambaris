@@ -199,15 +199,21 @@ export function Contact() {
         </div>
 
         {/* Map Placeholder */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-12 bg-muted rounded-3xl h-96 flex items-center justify-center"
-        >
-          <p className="text-foreground/50">Map Location Placeholder</p>
-        </motion.div>
+         <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="mt-12 bg-muted rounded-3xl h-96 overflow-hidden"
+    >
+      <iframe
+        title="Shakambaris Location"
+        src="https://www.google.com/maps?q=C-3,+Vaishali+Marg,+E+-+Block,+Block+C,+Vaishali+Nagar,+Jaipur,+Rajasthan+302021&output=embed"
+        className="w-full h-full border-0"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </motion.div>
       </div>
     </section>
   );
