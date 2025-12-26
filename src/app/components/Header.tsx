@@ -30,7 +30,7 @@ export function Header({ onNavigate, cartItemCount, isLoggedIn }: HeaderProps) {
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             <div className="w-10 h-10 bg-gradient-to-br from-[#6b4423] to-[#c4a57b] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">N</span>
+              <span className="text-white font-bold text-xl">S</span>
             </div>
             <span className="text-2xl font-semibold text-[#6b4423] hidden sm:block">
               Shakambaris
